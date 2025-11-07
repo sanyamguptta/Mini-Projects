@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: "kaliya";
+    src: url("./helvetica-now-display/HelveticaNowDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #222;
+}
+
+#nav-bar {
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#main a {
+    padding-right: 30px;
+    color: #222;
+    text-decoration: none;
+
+    font-style: 10px;
+}
+
+h1 {
+    font-family: kaliya;
+    font-size: 300px;
+    font-weight: 400;
+
+    padding-left: 30px;
+}
+#heading:hover {
+    color: pink;
+    font-style: italic;
+    background-color: aqua;
+    font-weight: 700;
+}
+
+#left-bottom {
+    width: 200px;
+    padding-bottom: 45px;
+    position: absolute;
+    left: 45px;
+    bottom: 70px;
+
+}
+#left-bottom h3 {
+    margin-bottom: 3px;
+}
+#left-bottom h4 {
+    margin-bottom: 3px;
+    margin-top: 25px;
+}
+
+#bottom-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+
+    padding-left: 15px;
+    padding-bottom: 25px;
+
+}
+#bottom-bar h1 {
+    color: #222;
+    text-decoration: none;
+    font-size: 20px;
+}
+#bottom-bar a {
+    padding-top: 1px;
+    padding-right: 35px;
+    font-style: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#first{
+    position: absolute;
+    top: 27%;
+    left: 51%;
+    width: 280px;
+    height: 410px;
+
+    z-index: 0.7;
+}
+#second{
+    position: absolute;
+    top: 53%;
+    left: 40%;
+    width: 270px;
+    height: 350px;
+}
+#third{
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    width: 280px;
+    height: 350px;
+}
+
+
+
+
+
+
+
