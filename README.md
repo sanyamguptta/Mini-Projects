@@ -1,6 +1,6 @@
 # Mini-Projects
 
-This repository contains practice projects and exercises that I have worked on to strengthen my fundamentals and gain hands-on experience in development. Each project is a small, focused implementation that helped me understand core concepts and build a strong command over various technologies.
+This repository contains practice mini-projects and exercises that I have worked on to strengthen my fundamentals and gain hands-on experience in development. Each project is a small, focused implementation that helped me understand core concepts and build a strong command over various technologies.
 
 ## Purpose
 
@@ -8,7 +8,7 @@ This repository contains practice projects and exercises that I have worked on t
 - To track my progress while practicing different development skills.
 - To serve as a reference for building real-world applications in the future.
 
-Each folder in this repository represents a separate mini-project. Examples include:
+Each folder in this repository represents a separate mini-project. 
 
 
 ## Technologies Used
