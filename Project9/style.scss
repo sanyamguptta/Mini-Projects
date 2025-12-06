@@ -1,0 +1,509 @@
+@font-face {
+    font-family: apple;
+    src: url(./iPhone/MYRIADPRO-BOLD.OTF);
+}
+@font-face {
+    font-family: regular;
+    src: url(./iPhone/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+    font-family: semi-bold;
+    src: url(./iPhone/MYRIADPRO-SEMIBOLD.OTF);
+}
+@font-face {
+    font-family: neww;
+    src: url(./sf-pro-display/SFPRODISPLAYLIGHTITALIC.OTF);
+}
+@font-face {
+    font-family: thin;
+    src: url(./aileron/Aileron-Thin.otf);
+}
+@font-face {
+    font-family: semi;
+    src: url(./aileron/Aileron-SemiBold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    // font-family: apple;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+
+    background-color: #fff;
+
+    // overflow: hidden;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    color: black;
+
+    background-color: rgb(214, 223, 240);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    #center {
+        height: 83vh;
+        width: 95vw;
+       
+        background-color: #fff;
+
+        overflow: hidden;
+
+        padding-left: 22px;
+        padding-right: 35px;
+
+        border-radius: 33px;
+
+        display: grid;
+        grid-template-columns: 55% 1fr 1fr;
+        grid-template-rows: 60px 43% 1fr;
+
+        grid-template-areas: "nav nav nav"
+                              "section-1 section-2 section-2"
+                              "section-1 left-div right-div";
+
+                              gap: 13px;
+                              
+
+        #nav {
+            // background-color: yellow;
+            grid-area: nav;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #nav-part1 {
+                display: flex;
+                font-family: apple;
+
+                padding-left: 25px;
+            }
+            #nav-part2 {
+                display: flex;
+                gap: 29px;
+
+                // font-family: semi-bold;
+                font-weight: 100;
+                font-size: 11px;
+            }
+            #nav-part3 {
+
+                font-size: 14px;
+
+                display: flex;
+                align-items: center;
+                gap: 14px;
+
+                padding-right: 5px;
+
+                font-family: semi-bold;
+                
+
+                button {
+                    color: whitesmoke;
+                    background-color: rgb(160, 202, 255);
+                    padding: 5px 15px;
+                    border-radius: 20px;
+                    border: none;
+
+                    font-size: 11.5px;
+                    font-family: semi-bold;
+                    font-weight: 200;
+
+                }
+            }
+
+            #nav-btn:hover {
+                color: white;
+                background-color: rgb(255, 27, 27);
+            }
+
+            #ek:hover {
+                color: rgb(179, 164, 164);
+                text-decoration: underline;
+            }
+            #do:hover {
+                color: rgb(179, 164, 164);
+                text-decoration: underline;
+            }
+            #tin:hover {
+                color: rgb(179, 164, 164);
+                text-decoration: underline;
+            }
+            #chaar:hover {
+                color: rgb(179, 164, 164);
+                text-decoration: underline;
+            }
+
+            h2 {
+                font-family: apple;
+            }
+            h5 {
+                font-family: semi-bold;
+            }
+            h6 {
+                font-family: semi-bold;
+            }
+        }
+
+        #section-1 {
+            // background-color: rgb(144, 183, 183);
+            grid-area: section-1;
+            padding-left: 24px;
+
+            // line-height: 58px;
+
+
+            #top-row {
+                display: flex;
+                align-items: center;
+
+                // background-color: yellow;
+
+                font-family: neww;
+
+                #heading {
+                    font-size: 40px;
+    
+                    padding-left: 25px;
+                    
+                }
+            }
+
+            #img{
+                padding: 18px 50px;
+                border-radius: 50px;
+                border: none;
+                // margin-top: 10px;
+
+                background-image: url(https://media.istockphoto.com/id/1155516052/photo/marble-colorful-neon-wave-pattern-prism-glitch-effect-abstract-background-dark-purple-blue.jpg?s=1024x1024&w=is&k=20&c=w7_E-ac6vxWeNQmdks_hMi11KsBXZ_cB2r1_lymMv4A=);
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            #img:hover {
+                scale: 1.04;
+            }
+
+            #section-1-head {
+                // background-color: red;
+                line-height: 58px;
+                
+                font-size: 40px;
+                font-family: neww;
+                padding-left: 15px;
+
+                .part {
+                    font-size: 58px;
+                }
+            }
+
+            #section-1-flex {
+                display: flex;
+                align-items: center;
+
+                line-height: 58px;
+
+                gap: 20px;
+
+                .part {
+
+                        font-size: 56px;
+                        font-family: neww;
+
+                        padding-left: 15px;
+                }
+
+                #section-1-btn {
+
+                        color: black;
+                        background-color: transparent;
+                        padding: 12px 26px;
+                        margin-top: 10px;
+    
+                        border-radius: 55px;
+                        border: 1.9px solid black;
+    
+                        font-size: 11px;
+    
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+    
+                        gap: 9px;
+    
+                        i {
+                            font-size: 13px;
+                        }
+                        span {
+                            font-size: 10px;
+                            font-weight: 100;
+                            padding-top: 1.4px;
+                        }
+                }
+
+                #section-1-btn:hover {
+                    color: whitesmoke;
+                    background-color: rgb(160, 202, 255);
+                    border: none;
+
+                    scale: 1.03;
+                    transition: all 0.9 linear;
+                }
+
+            }
+
+            #bottom-text {
+                font-size: 53px;
+                font-family: neww;
+
+                line-height: 58px;
+
+                padding-left: 15px;
+            }
+
+
+            #bottom-up {
+                display: flex;
+                align-items: center;
+
+                gap: 20px;
+
+                line-height: 58px;
+
+                h5 {
+                    // margin-top: 22px;
+                    text-decoration: underline;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 500;
+                    font-size: 11px;
+                    padding-top: 9.1px;
+                }
+
+                h5:hover {
+                    color: rgb(147, 137, 137);
+                    scale: 1.05;
+
+                    text-decoration: none;
+                    font-style: oblique;
+                }
+            }
+
+
+            #one{
+
+                margin-left: 16px;
+                margin-top: 10px;
+
+                color: whitesmoke;
+                background-color: rgb(160, 202, 255);
+                padding: 7.5px 26px;
+                border-radius: 20px;
+                border: none;
+
+                font-size: 11px;
+                // font-family: semi-bold;
+                // font-weight: 200;
+            }
+
+            #one:hover {
+                color: aquamarine;
+                background-color: black;
+                border: none;
+                cursor: pointer;
+            }
+            
+            #section-1-bottom {
+                padding-left: 19px;
+                line-height: 12px;
+
+                font-family: apple;
+                font-size: 12px;
+
+                margin-top: 72px;
+
+
+                #bottom-flex {
+                    display: flex;
+                    align-items: center;
+                    gap: 90px;
+
+                    margin-top: 21px;
+
+                    #cursive {
+                        font-family: cursive;
+                        font-weight: 800;
+
+                        font-size: 15px;
+                    }
+
+                    #semi-bold {
+                        font-family: regular;
+                        font-weight: 100;
+                    }
+
+                    #bold {
+                        font-family: apple;
+                        font-size: 18px;
+                        font-weight: 800;
+                    }
+                }
+            }
+
+        }
+
+        #section-2 {
+            
+            background-color: rgb(106, 106, 157);
+            grid-area: section-2;
+
+            // margin-right: 35px;
+
+            background-image: url(https://images.pexels.com/photos/6503367/pexels-photo-6503367.jpeg);
+            background-size: cover;
+            background-position: top;
+
+            border-radius: 40px;
+
+            color: white;
+            font-size: 25px;
+            font-family: thin;
+            padding: 18px 30px;
+
+            #btm-div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                margin-top: 25px;
+
+                font-size: 12px;
+                #arrow {
+                    
+                    font-size: 44px;
+                }
+            }
+
+            
+        }
+
+        #section-2:hover {
+            border: none;
+            scale: 1.03;
+        }
+
+        #left-div {
+            background-color: rgb(161, 132, 121);
+            grid-area: left-div;
+
+            // margin-top: 8px;
+            margin-bottom: 15px;
+            
+            // margin-right: 10px;
+
+            background-image: url(https://images.pexels.com/photos/10050568/pexels-photo-10050568.jpeg);
+            background-size: cover;
+            background-position: center;
+
+            padding: 25px 35px;
+
+            border-radius: 40px;
+            
+
+            .btn {
+                padding: 3px 7px;
+                border-radius: 20px;
+                font-size: 11px;
+            }
+
+            #arr {
+                    
+                    font-size: 44px;
+                    columns: blue;
+                    background-color: #fff;
+                }
+
+            h1 {
+                color: white;
+                font-size: 15px;
+
+                margin-top: 33px;
+            }
+
+            h5 {
+                color: #fff;
+                font-family: neww;
+
+                font-size: 11px;
+
+                margin-top: 14px;
+            }
+        }
+
+        #left-div:hover {
+            scale: 1.03;
+            border: 1px solid red;
+        }
+
+        #right-div {
+            background-color: pink;
+            grid-area: right-div;
+
+            // margin-top: 8px;
+            margin-bottom: 15px;
+            // margin-right: 33px;
+
+            background-image: url(https://images.pexels.com/photos/4598193/pexels-photo-4598193.jpeg);
+            background-size: cover;
+            background-position: center;
+
+            padding: 25px 35px;
+
+            border-radius: 40px;
+            
+
+            .btn {
+                padding: 3px 7px;
+                border-radius: 20px;
+                font-size: 11px;
+            }
+
+            h1 {
+                font-size: 50px;
+                color: white;
+                font-family: neww;
+
+                margin-top: 19px;
+            }
+
+            h5 {
+                color: #fff;
+                font-family: neww;
+
+                font-size: 11px;
+
+                margin-top: 10px;
+            }
+        }
+
+        #right-div:hover {
+            scale: 1.03;
+            border: 1px solid red;
+        }
+
+        
+    }
+
+}

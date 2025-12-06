@@ -1,0 +1,356 @@
+@font-face {
+  font-family: apple;
+  src: url(./iPhone/MYRIADPRO-BOLD.OTF);
+}
+@font-face {
+  font-family: regular;
+  src: url(./iPhone/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+  font-family: semi-bold;
+  src: url(./iPhone/MYRIADPRO-SEMIBOLD.OTF);
+}
+@font-face {
+  font-family: neww;
+  src: url(./sf-pro-display/SFPRODISPLAYLIGHTITALIC.OTF);
+}
+@font-face {
+  font-family: thin;
+  src: url(./aileron/Aileron-Thin.otf);
+}
+@font-face {
+  font-family: semi;
+  src: url(./aileron/Aileron-SemiBold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  color: black;
+  background-color: rgb(214, 223, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #center {
+  height: 83vh;
+  width: 95vw;
+  background-color: #fff;
+  overflow: hidden;
+  padding-left: 22px;
+  padding-right: 35px;
+  border-radius: 33px;
+  display: grid;
+  grid-template-columns: 55% 1fr 1fr;
+  grid-template-rows: 60px 43% 1fr;
+  grid-template-areas: "nav nav nav" "section-1 section-2 section-2" "section-1 left-div right-div";
+  gap: 13px;
+}
+main #center #nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #center #nav #nav-part1 {
+  display: flex;
+  font-family: apple;
+  padding-left: 25px;
+}
+main #center #nav #nav-part2 {
+  display: flex;
+  gap: 29px;
+  font-weight: 100;
+  font-size: 11px;
+}
+main #center #nav #nav-part3 {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-right: 5px;
+  font-family: semi-bold;
+}
+main #center #nav #nav-part3 button {
+  color: whitesmoke;
+  background-color: rgb(160, 202, 255);
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 11.5px;
+  font-family: semi-bold;
+  font-weight: 200;
+}
+main #center #nav #nav-btn:hover {
+  color: white;
+  background-color: rgb(255, 27, 27);
+}
+main #center #nav #ek:hover {
+  color: rgb(179, 164, 164);
+  text-decoration: underline;
+}
+main #center #nav #do:hover {
+  color: rgb(179, 164, 164);
+  text-decoration: underline;
+}
+main #center #nav #tin:hover {
+  color: rgb(179, 164, 164);
+  text-decoration: underline;
+}
+main #center #nav #chaar:hover {
+  color: rgb(179, 164, 164);
+  text-decoration: underline;
+}
+main #center #nav h2 {
+  font-family: apple;
+}
+main #center #nav h5 {
+  font-family: semi-bold;
+}
+main #center #nav h6 {
+  font-family: semi-bold;
+}
+main #center #section-1 {
+  grid-area: section-1;
+  padding-left: 24px;
+}
+main #center #section-1 #top-row {
+  display: flex;
+  align-items: center;
+  font-family: neww;
+}
+main #center #section-1 #top-row #heading {
+  font-size: 40px;
+  padding-left: 25px;
+}
+main #center #section-1 #img {
+  padding: 18px 50px;
+  border-radius: 50px;
+  border: none;
+  background-image: url(https://media.istockphoto.com/id/1155516052/photo/marble-colorful-neon-wave-pattern-prism-glitch-effect-abstract-background-dark-purple-blue.jpg?s=1024x1024&w=is&k=20&c=w7_E-ac6vxWeNQmdks_hMi11KsBXZ_cB2r1_lymMv4A=);
+  background-size: cover;
+  background-position: center;
+}
+main #center #section-1 #img:hover {
+  scale: 1.04;
+}
+main #center #section-1 #section-1-head {
+  line-height: 58px;
+  font-size: 40px;
+  font-family: neww;
+  padding-left: 15px;
+}
+main #center #section-1 #section-1-head .part {
+  font-size: 58px;
+}
+main #center #section-1 #section-1-flex {
+  display: flex;
+  align-items: center;
+  line-height: 58px;
+  gap: 20px;
+}
+main #center #section-1 #section-1-flex .part {
+  font-size: 56px;
+  font-family: neww;
+  padding-left: 15px;
+}
+main #center #section-1 #section-1-flex #section-1-btn {
+  color: black;
+  background-color: transparent;
+  padding: 12px 26px;
+  margin-top: 10px;
+  border-radius: 55px;
+  border: 1.9px solid black;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+main #center #section-1 #section-1-flex #section-1-btn i {
+  font-size: 13px;
+}
+main #center #section-1 #section-1-flex #section-1-btn span {
+  font-size: 10px;
+  font-weight: 100;
+  padding-top: 1.4px;
+}
+main #center #section-1 #section-1-flex #section-1-btn:hover {
+  color: whitesmoke;
+  background-color: rgb(160, 202, 255);
+  border: none;
+  scale: 1.03;
+  transition: all 0.9 linear;
+}
+main #center #section-1 #bottom-text {
+  font-size: 53px;
+  font-family: neww;
+  line-height: 58px;
+  padding-left: 15px;
+}
+main #center #section-1 #bottom-up {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 58px;
+}
+main #center #section-1 #bottom-up h5 {
+  text-decoration: underline;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  padding-top: 9.1px;
+}
+main #center #section-1 #bottom-up h5:hover {
+  color: rgb(147, 137, 137);
+  scale: 1.05;
+  text-decoration: none;
+  font-style: oblique;
+}
+main #center #section-1 #one {
+  margin-left: 16px;
+  margin-top: 10px;
+  color: whitesmoke;
+  background-color: rgb(160, 202, 255);
+  padding: 7.5px 26px;
+  border-radius: 20px;
+  border: none;
+  font-size: 11px;
+}
+main #center #section-1 #one:hover {
+  color: aquamarine;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+main #center #section-1 #section-1-bottom {
+  padding-left: 19px;
+  line-height: 12px;
+  font-family: apple;
+  font-size: 12px;
+  margin-top: 72px;
+}
+main #center #section-1 #section-1-bottom #bottom-flex {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  margin-top: 21px;
+}
+main #center #section-1 #section-1-bottom #bottom-flex #cursive {
+  font-family: cursive;
+  font-weight: 800;
+  font-size: 15px;
+}
+main #center #section-1 #section-1-bottom #bottom-flex #semi-bold {
+  font-family: regular;
+  font-weight: 100;
+}
+main #center #section-1 #section-1-bottom #bottom-flex #bold {
+  font-family: apple;
+  font-size: 18px;
+  font-weight: 800;
+}
+main #center #section-2 {
+  background-color: rgb(106, 106, 157);
+  grid-area: section-2;
+  background-image: url(https://images.pexels.com/photos/6503367/pexels-photo-6503367.jpeg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 40px;
+  color: white;
+  font-size: 25px;
+  font-family: thin;
+  padding: 18px 30px;
+}
+main #center #section-2 #btm-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  font-size: 12px;
+}
+main #center #section-2 #btm-div #arrow {
+  font-size: 44px;
+}
+main #center #section-2:hover {
+  border: none;
+  scale: 1.03;
+}
+main #center #left-div {
+  background-color: rgb(161, 132, 121);
+  grid-area: left-div;
+  margin-bottom: 15px;
+  background-image: url(https://images.pexels.com/photos/10050568/pexels-photo-10050568.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 25px 35px;
+  border-radius: 40px;
+}
+main #center #left-div .btn {
+  padding: 3px 7px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+main #center #left-div #arr {
+  font-size: 44px;
+  -moz-columns: blue;
+       columns: blue;
+  background-color: #fff;
+}
+main #center #left-div h1 {
+  color: white;
+  font-size: 15px;
+  margin-top: 33px;
+}
+main #center #left-div h5 {
+  color: #fff;
+  font-family: neww;
+  font-size: 11px;
+  margin-top: 14px;
+}
+main #center #left-div:hover {
+  scale: 1.03;
+  border: 1px solid red;
+}
+main #center #right-div {
+  background-color: pink;
+  grid-area: right-div;
+  margin-bottom: 15px;
+  background-image: url(https://images.pexels.com/photos/4598193/pexels-photo-4598193.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 25px 35px;
+  border-radius: 40px;
+}
+main #center #right-div .btn {
+  padding: 3px 7px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+main #center #right-div h1 {
+  font-size: 50px;
+  color: white;
+  font-family: neww;
+  margin-top: 19px;
+}
+main #center #right-div h5 {
+  color: #fff;
+  font-family: neww;
+  font-size: 11px;
+  margin-top: 10px;
+}
+main #center #right-div:hover {
+  scale: 1.03;
+  border: 1px solid red;
+}/*# sourceMappingURL=style.css.map */
